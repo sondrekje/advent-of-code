@@ -1,3 +1,7 @@
+package `2021`
+
+import readInput
+
 fun calculateGammaRate(binaryNums: List<String>): String =
     (0 until binaryNums.first().length).joinToString(separator = "") { index ->
         binaryNums.map { it[index].toString() }.groupingBy { it }.eachCount().maxByOrNull { it.value }!!.key

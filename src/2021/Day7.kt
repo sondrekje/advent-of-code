@@ -1,3 +1,5 @@
+package `2021`
+
 import java.io.File
 import kotlin.math.abs
 
@@ -21,7 +23,7 @@ fun findMinimumFuelConsumption(
 }
 
 fun main() {
-    val input = File("src", "Day7.txt").readText().split(",").map { it.toInt() }
+    val input = File("src", "2021/Day7.txt7.txt").readText().split(",").map { it.toInt() }
 
     val part1 = findMinimumFuelConsumption(input).also { println(it) }
     val part2 = findMinimumFuelConsumption(input, deltaStep).also { println(it) }

@@ -1,3 +1,5 @@
+package `2021`
+
 import java.io.File
 
 data class BingoBoard(
@@ -49,7 +51,7 @@ fun List<BingoBoard>.findWinners(drawn: List<Int>): List<WinningGame> {
 }
 
 fun main() {
-    val gameInput = File("src", "Day4.txt").readText()
+    val gameInput = File("src", "2021/Day4.txt4.txt").readText()
     val splitGame = gameInput.split("\n")
     val drawnNums = splitGame.first().split(",").map { it.toInt() }
     val boards = gameInput.dropWhile { it != '\n' }

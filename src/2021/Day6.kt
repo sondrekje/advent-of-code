@@ -1,3 +1,5 @@
+package `2021`
+
 import java.io.File
 
 data class Lanternfish(val timer: Int) {
@@ -17,7 +19,7 @@ fun simulateForDays(initalFish: List<Lanternfish>, days: Int): Map<Int, List<Lan
 }
 
 fun main() {
-    val input = File("src", "Day6.txt").readText().split(",").map { it.toInt() }
+    val input = File("src", "2021/Day6.txt6.txt").readText().split(",").map { it.toInt() }
     val initialFish = input.map { Lanternfish(it) }
 
     val part1 = simulateForDays(initialFish, 80).also { println(it[80]!!.size) }

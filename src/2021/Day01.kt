@@ -1,3 +1,7 @@
+package `2021`
+
+import readInput
+
 fun countDepthIncreases(depths: List<Int>) = depths.zipWithNext().count { (a, b) -> a < b }
 
 fun measureThreeWindowSum(depths: List<Int>): List<Int> = depths

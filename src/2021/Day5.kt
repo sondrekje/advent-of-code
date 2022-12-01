@@ -1,3 +1,7 @@
+package `2021`
+
+import readInput
+
 data class Point(val x: Int, val y: Int)
 
 val part1IgnoreMapping: (startX: Int, startY: Int, endX: Int, endY: Int) -> Boolean = { startX, startY, endX, endY ->

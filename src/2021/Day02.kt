@@ -1,3 +1,7 @@
+package `2021`
+
+import readInput
+
 // part 1
 fun parseInstruction(instruction: String): Pair<Int, Int> {
     val amount = instruction.substringAfter(" ").toInt()
