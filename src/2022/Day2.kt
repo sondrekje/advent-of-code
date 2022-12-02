@@ -85,4 +85,26 @@ class Day2Test {
             check(day2_part2(input) == 12)
         }
     }
+
+    // https://www.cs.drexel.edu/~jpopyack/Courses/CSP/Fa18/notes/CS150_RockPaperScissors_Revisited.pdf
+    @Test
+    fun day2PlayingWithModularArithmetic() {
+        """
+            A Y
+            B X
+            C Z
+        """.trimIndent().run {
+            split("\n").map { line -> line.split(" ") }.forEach { (opponent, me) ->
+                val opponentMoveAsInt = (opponent.single() - 'A')
+                val myMoveAsInt = (me.single() - 'X')
+
+                println(when ((myMoveAsInt - opponentMoveAsInt).mod(3)) {
+                    0 -> "TIE"
+                    1 -> "WIN"
+                    2 -> "LOSS"
+                    else -> error("impossible")
+                })
+            }
+        }
+    }
 }
