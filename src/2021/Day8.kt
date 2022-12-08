@@ -40,7 +40,7 @@ fun part2(signalsAndOutput: List<Pair<List<String>, List<String>>>) = signalsAnd
 class Day8Test {
     @Test
     fun day8() {
-        File("src/2021/Day8.txt").readLines().toListOfSignalAndOutput().let { input ->
+        File("src/2021/Day8.kt.txt").readLines().toListOfSignalAndOutput().let { input ->
             input.let(::part1).let(::println)
             input.let(::part2).let(::println)
         }
