@@ -1,6 +1,14 @@
 package `2021`
 
+import get
+import set
+import contains
+import Grid
+import allNeighbours
+import debugPrint
+import everyPoint
 import org.junit.jupiter.api.Test
+import toGrid
 import java.io.File
 
 fun steps(grid: Grid, maxSteps: Int = 100): Pair<Int, Int?> {

@@ -1,6 +1,10 @@
 package `2021`
 
+import get
+import neighbours
+import contains
 import org.junit.jupiter.api.Test
+import toGrid
 import java.io.File
 
 fun getLowPoints(grid: Array<IntArray>) = grid.flatMapIndexed { y, row ->

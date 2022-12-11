@@ -1,7 +1,7 @@
-import `2021`.everyPoint
-import `2021`.toGrid
-import `2021`.Grid
-import `2021`.get
+import everyPoint
+import toGrid
+import Grid
+import get
 import org.junit.jupiter.api.Test
 import java.io.File
 import kotlin.math.abs
