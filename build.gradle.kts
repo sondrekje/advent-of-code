@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.7.0"
+    kotlin("jvm") version "1.9.21"
 }
 
 repositories {
@@ -8,7 +8,7 @@ repositories {
 
 dependencies {
     implementation("org.junit.jupiter:junit-jupiter:5.7.0")
-    implementation("org.jetbrains.kotlin:kotlin-test:1.7.21")
+    implementation("org.jetbrains.kotlin:kotlin-test:1.9.21")
 }
 
 tasks.test {
