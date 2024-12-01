@@ -1,6 +1,6 @@
 import java.io.File
 
-fun readInput(name: String) = File("src", "$name.txt").readLines()
+fun readInput(name: String, year: Long = 2024) = File("src", "$year/$name.txt").readLines()
 
 object Ansi {
     const val RESET = "\u001B[0m"

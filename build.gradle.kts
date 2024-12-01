@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.21"
+    kotlin("jvm") version "2.1.0"
 }
 
 repositories {
@@ -7,8 +7,8 @@ repositories {
 }
 
 dependencies {
-    implementation("org.junit.jupiter:junit-jupiter:5.7.0")
-    implementation("org.jetbrains.kotlin:kotlin-test:1.9.21")
+    implementation("org.junit.jupiter:junit-jupiter:5.11.3")
+    implementation("org.jetbrains.kotlin:kotlin-test:2.1.0")
 }
 
 tasks.test {
@@ -23,6 +23,6 @@ tasks {
     }
 
     wrapper {
-        gradleVersion = "7.3"
+        gradleVersion = "8.11.1"
     }
 }
