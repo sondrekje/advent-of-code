@@ -5,7 +5,7 @@ import kotlin.math.abs
 
 private const val PAIR_SEPERATOR = "   "
 
-fun part1(lines: List<String>): Long {
+private fun part1(lines: List<String>): Long {
     val linesSplit = lines.map { line -> line.split(PAIR_SEPERATOR).map { it.toLong() } }
     val leftArray = linesSplit.map { it[0] }.sorted()
     val rightArray = linesSplit.map { it[1] }.sorted()
@@ -15,7 +15,7 @@ fun part1(lines: List<String>): Long {
     }
 }
 
-fun part2(lines: List<String>): Long {
+private fun part2(lines: List<String>): Long {
     val linesSplit = lines.map { line -> line.split(PAIR_SEPERATOR).map { it.toLong() } }
     val leftArray = linesSplit.map { it[0] }.sorted()
     val rightArray = linesSplit.map { it[1] }.sorted()
